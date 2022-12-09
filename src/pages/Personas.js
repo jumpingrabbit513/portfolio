@@ -10,13 +10,16 @@ import chloe from './images/chloe.svg'
 import sarahBoard from './images/sarah-board.png'
 import chloeBoard from './images/chloe-board.png'
 import white from './images/white.png'
+import BackButton from '../components/BackButton.js'
+
 
 const Personas = () => {
 return (
 <div>
 <nav className="navbar sticky-top navbar-expand-sm bg-light">
+    <BackButton></BackButton>
     <div className="container-fluid">
-        <a className="navbar-brand" href="/">jumping rabbit</a>
+        <a className="navbar-brand" href="/">personas & storyboarding</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
         </button>

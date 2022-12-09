@@ -11,13 +11,16 @@ function Home() {
   
     return (
       <div>
-        <div>
+        <div >
           <CustomNav name={name}/>
         </div>
   
-        <div className='big-name'>
+        <div className='d-flex big-name flex-row'>
+          <div>
           <h1 className="display-1">{name}</h1>
           <p className="lead">{data.tagline}</p>
+          </div>
+      
           {/* <a href="#about">about me</a> */}
         </div>
         
@@ -26,7 +29,7 @@ function Home() {
         <p className='lead'>click on project to view more</p>
         </div>
         
-        <div className="d-flex flex-wrap w-90 justify-content-center gap-5 mx-auto">
+        <div className="word-card-container d-flex flex-wrap justify-content-center gap-5 mx-auto">
           {portfolioItems.map((item) => 
           <WorkCard
           title={item["title"]}

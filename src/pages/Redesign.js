@@ -10,12 +10,14 @@ import lofiTablet from './images/prototypes/lofi-tablet.png'
 import lofiMobile from './images/prototypes/lofi-mobile.png'
 import hifiAll from './images/prototypes/hifi-all.svg'
 import styleGuide from './images/prototypes/style-guide.svg'
+import BackButton from '../components/BackButton.js'
 
 
 function Redesign () {
     return (
     <div>
     <nav class="navbar sticky-top navbar-expand-sm bg-light">
+        <BackButton></BackButton>
     <div class="container-fluid">
         <a class="navbar-brand" href="/">responsive redesign</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

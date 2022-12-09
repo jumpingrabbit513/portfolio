@@ -27,6 +27,7 @@ import wireframeBusinessUserDashboard from './images/wireframe/BUSINESS USER DAS
 import wireframeAnalytics from './images/wireframe/ANALYTICS PAGE.png'
 import wireframeProjectPage from './images/wireframe/PROJECT PAGE.png'
 import wireframeNewProjectPage from './images/wireframe/NEW PROJECT PAGE.png'
+import BackButton from '../components/BackButton.js'
 
 
 
@@ -36,6 +37,7 @@ function Iterative () {
     return (
     <div>
     <nav className="navbar sticky-top navbar-expand-sm bg-light">
+        <BackButton></BackButton>
     <div className="container-fluid">
         <a className="navbar-brand" href="#">iterative design</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +88,7 @@ function Iterative () {
 </div>
 
 
-<div id="sketches" className="container-fluid text-center section w-90">
+<div id="sketches" className="container-fluid text-left section w-75">
     <h4>initial sketches</h4>
 
 
@@ -96,12 +98,9 @@ function Iterative () {
         editing projects.
     </p>
 
+    <p >sketch 1: the edit project page allows users to drag and drop components + add interaction to them by right clicking:</p>
 
-
-
-    <p>sketch 1: the edit project page allows users to drag and drop components + add interaction to them by right clicking:</p>
-
-    <div className="prototypes d-flex flex-row justify-content-center">
+    <div className="d-flex prototype">
         <div><img className="image-fluid" src={Home1} alt="home page sketch"/></div>
         <div><img className="image-fluid" src={Demo1} alt="demo page sketch"/></div>
         <div><img className="image-fluid" src={Project1} alt="project page sketch"/></div>
@@ -109,7 +108,7 @@ function Iterative () {
 
     <p>sketch 2: more component based editing, with a more clearly defined projects page (edit/view/share).</p>
 
-    <div className="prototypes d-flex flex-row justify-content-center">
+    <div className="d-flex prototype">
         <div><img className="image-fluid" src={UserPortal2} alt="user portal page sketch"/></div>
         <div><img className="image-fluid" src={Share2} alt="share page sketch"/></div>
         <div><img className="image-fluid" src={Edit2} alt="edit page sketch"/></div>
@@ -118,7 +117,7 @@ function Iterative () {
 
     <p>sketch 3: a video based demo software instead of interactive component-based page.</p>
 
-    <div className="prototypes d-flex flex-row justify-content-center">
+    <div className="d-flex prototype">
         <div><img className="image-fluid" src={LandingScreen3} alt="landing page sketch"/></div>
         <div><img className="image-fluid" src={Project3} alt="project page sketch"/></div>
         <div><img className="image-fluid" src={Editor3} alt="editor page sketch"/></div>
@@ -126,7 +125,7 @@ function Iterative () {
 
     <p>sketch 4: a clearly defined analytics page design, with a vertical navbar as a menu for everything you'd want for a single project.</p>
 
-    <div className="prototypes d-flex flex-row justify-content-center">
+    <div className="d-flex prototype">
         <div><img className="image-fluid" src={Home4} alt="home page sketch"/></div>
         <div><img className="image-fluid" src={StartCreating4} alt="start creating sketch"/></div>
         <div><img className="image-fluid" src={Project4} alt="project page sketch"/></div>
@@ -134,19 +133,19 @@ function Iterative () {
 </div>
 
 
-<div id="wireframe" className="container-fluid text-center section">
+<div id="wireframe" className="container-fluid text-left section w-75">
     <h4>wireframe prototype</h4>
     <p className="lead">then we created a wireframe to flush out a single design. </p>
     <p >we incorporated different sketch ideas into this single design:</p>
-    <p >sketch 1/2's component based editors + sketch 4's analytics page. </p>
-    <div className="prototypes d-flex flex-row justify-content-center">
+    <p style={{"margin-bottom":"100px"}}>sketch 1/2's component based editors + sketch 4's analytics page. </p>
+    <div className="prototype d-flex">
         <div><p>home page</p><img className="image-fluid" src={wireframeHome} alt="home page sketch"/></div>
         <div><p>what we do</p><img className="image-fluid" src={wireframeWhatWeDo} alt="what we do page sketch"/></div>
         <div><p>login</p><img className="image-fluid" src={wireframeLogin} alt="login page sketch"/></div>
         <div><p>business user dashboard</p><img className="image-fluid" src={wireframeBusinessUserDashboard} alt="user dashboard page sketch"/></div>
     </div>
 
-    <div className="prototypes d-flex flex-row justify-content-center">
+    <div className="prototype d-flex">
         <div><p>analytics</p><img className="image-fluid" src={wireframeAnalytics} alt="analytics page sketch"/></div>
         <div><p>project page</p><img className="image-fluid" src={wireframeProjectPage} alt="project page sketch"/></div>
         <div><p>new project page</p><img className="image-fluid" src={wireframeNewProjectPage} alt="new project page page sketch"/></div>
@@ -174,14 +173,14 @@ function Iterative () {
 
     <p className="lead">here's a video showing our hifi prototype's flow! try watching in fullscreen. </p>
 
-    <div className="embed-responsive embed-responsive-16by9" >
-        <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/ehLDglcQaUY"></iframe>
+    <div>
+        <iframe width={"1280"} height={"720"} src="https://www.youtube.com/embed/ehLDglcQaUY"></iframe>
     </div>
 </div>
 
 <div id="usertesting" className="container-fluid section w-50">
     <h4>user testing</h4>
-    <p className="lead">we then submitted our hifi prototype to usertesting.com so we could get some real feedback.  </p>
+    <p className="lead" style={{"margin-bottom":"50px"}}>we then submitted our hifi prototype to usertesting.com so we could get some real feedback.  </p>
 
     <p>We prompted the users to complete this task:</p>
     
@@ -221,7 +220,7 @@ function Iterative () {
         that had the information we asked them to look at. This was our original intention with the 
         edit button but going forward we may consider allowing edits directly from our metrics page. 
         </p>
-    <p>Generally, all users struggled with the “edit two things about the project” task. After they 
+    <p style={{"margin-bottom":"50px"}}>Generally, all users struggled with the “edit two things about the project” task. After they 
         clicked on the edit button, the options that were presented to “edit” did not map internally 
         with our users signaling that this would function as an edit. They were able to figure it out, 
         but commented on the lack of clarity and were not sure if they had properly completed the task.</p>

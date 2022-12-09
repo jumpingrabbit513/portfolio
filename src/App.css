@@ -37,6 +37,10 @@
   }
 }
 
+.word-card-container {
+  max-width: 1300px;
+}
+
 .work-card {
   width: 600px;
   text-align: left;
@@ -45,26 +49,24 @@
 
 .card-bottom {
   transition: 500ms ease-out;
-  cursor: pointer;
 }
 
-.card-bottom:hover {
+/* .card-bottom:hover {
   scale: 101%;
-}
+} */
 
 .project-image {
   width:600px;
-  border-radius: 30px;
+  border-radius: 5px;
   margin-bottom: 20px;
   transition: 600ms ease-out;
 }
 
 .project-image:hover {
-  border-radius: 20px;
-  scale: 102%;
+  border-radius: 15px;
+  scale: 101%;
   cursor: pointer;
   opacity: 80%;
-  margin-bottom: 30px;
 }
 
 .project-title {
@@ -90,7 +92,6 @@
   opacity: 100%;
 }
 
-
 .big-name {
   opacity: 80%;
   display: flex;
@@ -104,9 +105,9 @@
 
 .big-name:hover {
   opacity: 100%;
-  scale: 105%;
-  margin-left: 15vw;
-  height: 420px;
+  /* scale: 105%; */
+  /* margin-left: 15vw; */
+  height: 410px;
 }
 
 .about {
